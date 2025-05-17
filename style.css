@@ -13,6 +13,10 @@ ul {
   overflow-x: hidden;
   margin: auto;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 .ddns390 {
   margin: 0;
 }
@@ -173,9 +177,20 @@ li .comment .comment-content {
 }
 #sjdsm00 {
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(13, 20, 2);
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(13, 20, 2, 0.5);
 }
 #sjdsm00 li {
   margin: 8px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  /* CSS dành riêng cho màn hình PC */
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+    display: flex;
+    gap: 8px;
+  }
 }
